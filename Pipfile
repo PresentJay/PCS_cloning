@@ -1,0 +1,18 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+django = "==3.0.6"
+numpy = "==1.18.4"
+opencv-python = "==4.2.0.34"
+pillow = "==7.1.2"
+sqlparse = "==0.3.1"
+asgiref = "==3.2.7"
+pytz = "==2020.1"
+
+[requires]
+python_version = "3.7"
