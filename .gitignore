@@ -326,3 +326,6 @@ snap/
 prime/
 stage/
 pip-wheel-metadata/
+
+# in project
+uploads/

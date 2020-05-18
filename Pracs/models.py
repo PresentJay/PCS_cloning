@@ -15,7 +15,7 @@ class Prac(core_models.TimeStampedModel):
     user = models.ForeignKey(
         "users.User", related_name="pracs", on_delete=models.CASCADE
     )
-    video = models.FileField(upload_to="pracs/", null=True)
+    video = models.FileField(upload_to="pracs", null=True)
     score = models.IntegerField(default=0)
 
     def __str__(self):

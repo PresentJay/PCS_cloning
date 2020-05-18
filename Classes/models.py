@@ -19,7 +19,7 @@ class Class(core_models.TimeStampedModel):
     )
 
     title = models.TextField(blank=False)
-    video = models.FileField(upload_to="classes/", null=True)
+    video = models.FileField(upload_to="classes")
     thumbnail = models.ImageField(upload_to="")
     views_count = models.PositiveIntegerField(default=0)
     level = models.CharField(choices=LEVEL_CHOICES, max_length=5, default=LOW)
