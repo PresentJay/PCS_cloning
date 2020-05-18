@@ -5,6 +5,6 @@ from . import models
 
 
 @admin.register(models.Class)
-class ClassAdmin(admin.ModelAdmin):
+class Class_Admin(admin.ModelAdmin):
     fieldsets = (("basic", {"fields": ("title", "video", "thumbnail", "level"),}),)
 

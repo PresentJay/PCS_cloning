@@ -8,7 +8,7 @@ class User(AbstractUser):
 
     """ Users model definition """
 
-    birthday = models.DateTimeField()
+    birthday = models.DateTimeField(null=True)
 
     def __str__(self):
         return self.username

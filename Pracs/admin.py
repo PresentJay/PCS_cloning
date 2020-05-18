@@ -4,9 +4,9 @@ from . import models
 # Register your models here.
 
 
-@admin.site.register(models.Prac)
-class PracAdmin(admin.ModelAdmin):
+@admin.register(models.Prac)
+class Prac_Admin(admin.ModelAdmin):
     fieldsets = (
         ("basic", {"fields": ("title", "video", "score")},),
-        ("times", {"fields": ("created", "updated")}),
+        # ("times", {"fields": ("created", "updated")}),
     )
