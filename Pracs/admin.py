@@ -7,6 +7,6 @@ from . import models
 @admin.register(models.Prac)
 class Prac_Admin(admin.ModelAdmin):
     fieldsets = (
-        ("basic", {"fields": ("title", "video", "score")},),
+        ("basic", {"fields": ("title", "video", "score", "user", "class_vid")},),
         # ("times", {"fields": ("created", "updated")}),
     )
