@@ -4,7 +4,7 @@ from core import models as core_models
 # Create your models here.
 
 
-class Classes(core_models.TimeStampedModel):
+class Class(core_models.TimeStampedModel):
 
     """ Classes Video Model Definition """
 

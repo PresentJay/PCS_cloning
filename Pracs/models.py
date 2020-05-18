@@ -4,7 +4,7 @@ from core import models as core_models
 # Create your models here.
 
 
-class Pracs(core_models.TimeStampedModel):
+class Prac(core_models.TimeStampedModel):
 
     """ Pracs Video models definition """
 
