@@ -7,3 +7,13 @@ from . import models
 
 def login(request):
     pass
+
+
+def main_views(request):
+    # all_classes = models.Class.objects.all()
+    # all_pracs = models.Prac.objects.all()
+
+    return render(
+        request, "home.html" #, context={"classes": all_classes, "pracs": all_pracs}
+    )
+
