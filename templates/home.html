@@ -9,6 +9,23 @@ Main Page
 
 {% block content %}
 
-test
+<div>
+    <h1>* * *Class Videos* * *</h1>
+    {% for class in classes %}
+
+    <h4>{{class.title}} / {{class.user.username}}</h4>
+    {% endfor %}
+</div>
+
+<div>
+    <h1>* * *Pracs Videos* * *</h1>
+
+    {% for prac in pracs %}
+
+    <h4> {{prac.title}} / {{prac.user.username}} </h4>
+
+    {% endfor %}
+
+</div>
 
 {% endblock content %}

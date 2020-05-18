@@ -20,9 +20,10 @@ class Class(core_models.TimeStampedModel):
 
     title = models.TextField(blank=False)
     video = models.FileField(upload_to="classes")
+    user = models.ForeignKey("users.User", on_delete=models.CASCADE)
     thumbnail = models.ImageField(upload_to="")
     views_count = models.PositiveIntegerField(default=0)
     level = models.CharField(choices=LEVEL_CHOICES, max_length=5, default=LOW)
 
     def __str__(self):
-        return self.title + ": " + str(self.videofile)
+        return self.title + ": " + str(self.video)
